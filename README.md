@@ -8,3 +8,9 @@ by default, all the paths are set up for you to clone this repository directly i
 
 you can find the list of additions in index.md
 
+this is not a "drop in" system. These are just some scripts i made that i decided to make available. You can use this repository either to implement individual components you want, or as reference material for your own scripts. 
+
+working with this repository is likely to require modification of the scripts. 
+
+
+
