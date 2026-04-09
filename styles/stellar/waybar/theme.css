@@ -1,0 +1,11 @@
+@define-color black      #000000;
+@define-color text       #fefc9f;
+@define-color transparent rgba(0, 0, 0, 0);
+@define-color transparent2 #1f160a;
+@define-color accent        #6d5c55;
+@define-color highlight          #c8cdd1; 
+@define-color highlighttrans     #b4bbc3; 
+@define-color background-module     @transparent2;
+@define-color background-module-2     @transparent2;
+@define-color alert        @color3;
+@define-color warning      @color2;

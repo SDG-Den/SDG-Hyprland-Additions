@@ -1,0 +1,36 @@
+[Steam] steam
+[Discord] vesktop
+[Lutris] lutris
+[Balatro Mod Manager] balatro-mod-manager
+[Torrent] qbittorrent
+[Terminal] alacritty
+[Minecraft Prism] prismlauncher
+[VS Code] code
+[Obsidian Notes] obsidian
+[File Browser] nautilus
+[Web Browser] firefox
+[Update System] arch-update
+[Audacity Audio Editor] audacity
+[BitWarden Password Manager] bitwarden
+[System Monitor / Task Manager] alacritty -e btop
+[CachyOS Hello] /usr/bin/cachyos-hello
+[Install Package TUI] alacritty --class=floating-terminal-large -e ~/SDG-Hyprland-Additions/additional-menus/pkg-install.sh
+[Install AUR TUI] alacritty --class=floating-terminal-large -e ~/SDG-Hyprland-Additions/additional-menus/aur-install.sh
+[GIMP (Gnu Image Manipulation Program)] gimp
+[Word (libreoffice writer)] libreoffice --writer
+[Excel (libreoffice calc)] libreoffice --calc
+[Powerpoint (libreoffice-impress)] libreoffice --impress
+[LocalSend] localsend
+[Minecraft] minecraft-launcher.sh
+[GPU utilization] alacritty -e nvtop
+[Wireshark network package analyzer] wireshark
+[remmina remote desktop client] remmina
+[osu lazer] /usr/bin/osu-lazer
+[OwnCloud Sync Client] owncloud --show
+[Virtual Machine Manager] virt-manager
+[VLC video player] /usr/bin/vlc
+[command explainers (tldr)] alacritty --hold --class tldr -e ~/SDG-Hyprland-Additions/additional-menus/tldr.sh
+[arch wiki] alacritty -e wikiman
+[GPU overclocking utility] lact
+[Pick Style] alacritty --hold --class floating-terminal -e ~/SDG-Hyprland-Additions/styles-config/pickstyle.sh
+[OBS studio recording software] obs

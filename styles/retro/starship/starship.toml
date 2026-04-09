@@ -1,0 +1,53 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$directory\
+$character"""
+
+add_newline = false
+
+right_format = ""
+
+scan_timeout = 35
+command_timeout = 700
+
+palette = 'matrixcolors'
+
+[palettes.matrixcolors]
+color_custom_matrix = '#4AF626FF'
+color_custom_matrix_bg = '#000000FF'
+
+[username]
+show_always = true
+style_user = "bg:color_custom_matrix_bg fg:color_custom_matrix"
+style_root = "bg:color_custom_matrix_bg fg:color_custom_matrix"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:color_custom_matrix bg:color_custom_matrix_bg"
+format = "[ $path ]($style)"
+truncation_length = 5
+truncation_symbol = ".."
+truncate_to_repo = false
+read_only = " X "
+read_only_style = "fg:color_custom_matrix bg:color_custom_matrix_bg"
+
+[character]
+disabled = false
+success_symbol = '[>](bold fg:color_custom_matrix)'
+error_symbol = '[>](bold fg:color_custom_matrix)'
+vimcmd_symbol = '[>](bold fg:color_custom_matrix)'
+vimcmd_replace_one_symbol = '[>](bold fg:color_custom_matrix)'
+vimcmd_replace_symbol = '[>](bold fg:color_custom_matrix)'
+vimcmd_visual_symbol = '[>](bold fg:color_custom_matrix)'
+
+[cmd_duration]
+min_time = 2000
+style = "bg:color_bg3"
+format = '[[  $duration ](fg:color_custom_matrix bg:color_custom_matrix_bg)]($style)'
+
+[jobs]
+threshold = 1
+symbol = ""
+style = "bg:color_bg1"
+format = '[[ $symbol $number ](fg:color_custom_matrix bg:color_custom_matrix_bg)]($style)'

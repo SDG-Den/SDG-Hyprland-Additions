@@ -1,0 +1,9 @@
+{
+  "wallpaper_directory": "~/ownCloud/ArchConfig/styles/dark-clean/wallpapers",
+  "switch_frequency": 36000,
+  "transition_type": "wipe",
+  "cycling_type": "random",
+  "sync_type": "all"
+}
+ 
+              

@@ -1,0 +1,15 @@
+    
+{   
+    "custom/touchscreen": {
+      "interval": 3,
+      "format": "🖝: {text}",
+      "exec": "~/SDG-Hyprland-Additions/touchutils/touchcheck.sh",
+      "on-click": "~/SDG-Hyprland-Additions/touchutils/toggletouch.sh"
+    },
+    "custom/keyboard": {
+      "interval": 3,
+      "format": "{text}",
+      "exec": "~/SDG-Hyprland-Additions/touchutils/togglehide.sh 'on' 'echo ⌨'",
+      "on-click": "~/SDG-Hyprland-Additions/touchutils/keyboard.sh"
+    }
+}

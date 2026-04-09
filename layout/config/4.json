@@ -1,0 +1,58 @@
+{
+  "presets": {
+    "1": [
+      { "x": 2, "y": 5, "width": 47, "height": 46 },
+      { "x": 51, "y": 5, "width": 47, "height": 46 },
+      { "x": 2, "y": 52, "width": 47, "height": 46 },
+      { "x": 51, "y": 52, "width": 47, "height": 46 }
+    ],
+    "2": [
+      { "x": 2, "y": 5, "width": 68, "height": 94 },
+      { "x": 71, "y": 5, "width": 27, "height": 29 },
+      { "x": 71, "y": 37, "width": 27, "height": 29 },
+      { "x": 71, "y": 69, "width": 27, "height": 29 }
+    ],
+    "3": [
+      { "x": 2, "y": 19, "width": 31, "height": 80 },
+      { "x": 34, "y": 19, "width": 31, "height": 80 },
+      { "x": 66, "y": 19, "width": 31, "height": 80 },
+      { "x": 2, "y": 5, "width": 95, "height": 12 }
+    ],
+    "4": [
+      { "x": 2, "y": 5, "width": 17, "height": 93 },
+      { "x": 20, "y": 5, "width": 59, "height": 76 },
+      { "x": 20, "y": 82, "width": 59, "height": 16 },
+      { "x": 80, "y": 5, "width": 17, "height": 93 }
+    ],
+    "5": [
+      { "x": 2, "y": 5, "width": 17, "height": 73 },
+      { "x": 2, "y": 79, "width": 17, "height": 20 },
+      { "x": 20, "y": 79, "width": 79, "height": 20 },
+      { "x": 20, "y": 5, "width": 79, "height": 73 }
+    ],
+    "6": [
+      { "x": 2, "y": 5, "width": 37, "height": 92 },
+      { "x": 41, "y": 5, "width": 57, "height": 30 },
+      { "x": 41, "y": 36, "width": 57, "height": 30 },
+      { "x": 41, "y": 67, "width": 57, "height": 30 }
+    ],
+    "7": [
+      { "x": 2, "y": 5, "width": 96, "height": 16 },
+      { "x": 2, "y": 22, "width": 47, "height": 76 },
+      { "x": 51, "y": 22, "width": 47, "height": 37 },
+      { "x": 51, "y": 60, "width": 47, "height": 37 }
+    ],
+    "8": [
+      { "x": 2, "y": 5, "width": 31, "height": 94 },
+      { "x": 34, "y": 5, "width": 31, "height": 46 },
+      { "x": 34, "y": 52, "width": 31, "height": 46 },
+      { "x": 66, "y": 5, "width": 31, "height": 94 }
+    ],
+    "9": [
+      { "x": 2, "y": 5, "width": 96, "height": 29 },
+      { "x": 2, "y": 35, "width": 47, "height": 63 },
+      { "x": 51, "y": 35, "width": 47, "height": 30 },
+      { "x": 51, "y": 66, "width": 47, "height": 30 }
+    ]
+  }
+}

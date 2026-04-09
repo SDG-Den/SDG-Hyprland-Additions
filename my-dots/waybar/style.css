@@ -1,0 +1,146 @@
+
+@define-color black      	#000000;
+@define-color text       	#FFFFFF;
+
+@define-color transparent	rgba(0, 0, 0, 0);
+@define-color transparent2	rgba(0, 0, 0, 0.5);
+@define-color accent        rgba(120, 07, 190, 0.8);
+@define-color highlight          rgba(51, 204, 255, 1); 
+@define-color highlighttrans     rgba(51, 204, 255, 0.4); 
+
+@define-color background-module     @transparent2;
+@define-color background-module-2     @transparent2;
+@define-color alert        #F6762A;
+@define-color warning      #FF0000;
+
+* {
+	font-family: "JetBrainsMono Nerd Font";
+	font-weight: bold;
+	min-height: 0;	
+	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+	font-size: 97%;
+	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+@import '../theme.css';
+
+window#waybar {
+	background: @transparent;
+	border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px;
+    border:2px solid @transparent;
+}
+
+window#waybar.empty,
+window#waybar.empty #window {
+    background-color: @transparent;
+    padding: 8px;
+    border: 2px;
+}
+
+tooltip {
+	background-color: @transparent2;
+	border-radius: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #11111b;
+	color: @accent;
+}
+
+#custom-vpn,
+#custom-notification,
+#custom-notification.none,
+#custom-appmenu,
+#custom-exit,
+#custom-keyboard,
+#battery,
+#clock,
+#network,
+#pulseaudio,
+#pulseaudio-slider,
+#tray,
+#window,
+#custom-keybinds,
+#custom-keyboard,
+#custom-menu,
+#custom-quit,
+#custom-memory,
+#custom-cpu,
+#custom-touchscreen,
+#custom-keyboard,
+#bluetooth,
+#window,
+#workspaces,
+#custom-swaync {
+	background-color: @background-module-2;
+    border-radius: 25px;
+    padding: 0px 10px 0px 10px;
+    margin: 4px;
+    opacity:1;
+    border:2px solid @accent;
+    color: @highlight;
+
+}
+
+#custom-notification.notification {
+    color: @alert;
+}
+
+#custom-notification.dnd-none,
+#custom-notification.dnd-notification,
+#pulseaudio-muted,
+#battery.critical:not(.charging) {
+color: @warning;
+}
+
+#workspaces {
+    padding: 0px 0px 0px 0px;
+}
+
+#workspaces button{
+    color: @text;
+    border-radius: 25px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#workspaces button.empty {
+    color: @text;
+    background: @transparent;
+}
+#workspaces button.active {
+    color: @text;
+    background: @accent;
+}
+#taskbar button:hover,
+#workspaces button:hover {
+    color: @text;
+    background: @highlighttrans;
+}
+
+#window {
+    color: @text;
+}
+
+@keyframes blink {
+    to {
+        color: @black;
+    }
+}
+
+#battery.critical:not(.charging) {
+	animation-name: blink;
+	animation-duration: 3.0s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@import '../theme.css';
+

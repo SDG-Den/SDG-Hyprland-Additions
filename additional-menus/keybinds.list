@@ -1,0 +1,55 @@
+#### OS functions ####
+[Win] + [L] - lock screen
+[Win] + [space] - application launcher
+[Win] + [V] - open clipboard
+[Win] + [shift] + [C] - open color picker
+[Win] + [H] - show keybinds.txt
+[Win] + [shift] + [Q] - quit hyprland
+[Win] + [K] - show keybinds menu
+[Win] + [arrow keys] - move focus between windows (also moves cursor)
+[Win] + [R] -  Quick runner menu (runs whatever command you give it in a background process)
+
+#### Screenshots ####
+[PrintScrn] - switch printscreen output mode (save to file, clipboard or editor)
+[Win] + [PrintScrn] - screenshot selectable region
+[Win] + [shift] + [PrintScrn] - screenshot selectable window
+[Win] + [alt] + [PrintScrn] - screenshot active monitor
+[ctrl] + [alt] + [PrintScrn] - screenshot all monitors and stitch them together
+
+
+
+#### window management ####
+[Win] + [Q] - close focused window (like pressing the X on desktop)
+[Win] + [T] - toggle floating on focused window
+[Win] + [F] - toggle fullscreen for focused window
+[Win] + [P] - toggle pinned for focused window
+[Win] + [shift] + [p] - turn focused window into overlay
+[Win] + [hold lmb] - move window
+[Win] + [hold rmb] - move borders
+
+#### workspaces ####
+[Win] + [0-9] - move to workspace x
+[Win] + [shift] + [0-9] - move the focused application to workspace x
+[Win] + [alt] + [1-9] - set this static layout (wip)
+[Win] + [alt] + [0] - return to dynamic layout (default)
+[Win] + [scroll] - scroll through active workspaces on the focused monitor
+
+
+#### programs ####
+[Win] + [Enter/Tab] - Open Alacritty (terminal)
+[Win] + [E] - open file browser home folder
+[Win] + [B] - open web browser (firefox)
+[Win] + [O] - open file browser to owncloud folder
+
+
+#### menus ####
+[Win] + [X] - replica windows "power user" menu
+[Win] + [Z] - script runner menu containing various utility scripts
+[Win] + [C] - quick app menu
+[Win] + [A] - Admin utilities menu
+
+
+#### util ####
+[Win] + [shift] + [B] - reload waybar (top bar)
+[Win] + [shift] + [W] - reload hyprpaper (wallpaper)
+

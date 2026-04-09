@@ -1,0 +1,232 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$os\
+$username\
+[](bg:color_custom_blue fg:color_custom_purple)\
+$directory\
+[](fg:color_custom_blue bg:color_custom_teal)\
+$git_branch\
+$git_status\
+$git_state\
+$git_metrics\
+[](fg:color_custom_teal bg:color_custom_green)\
+$c\
+$cpp\
+$rust\
+$golang\
+$nodejs\
+$python\
+$package\
+[](fg:color_custom_green bg:color_custom_pink)\
+$kubernetes\
+$docker_context\
+$conda\
+[](fg:color_custom_pink)\
+$character"""
+
+add_newline = false
+
+right_format = ""
+
+scan_timeout = 35
+command_timeout = 700
+
+palette = 'gruvbox_dark'
+
+[palettes.gruvbox_dark]
+color_fg0 = '#fbf1c7'
+color_fg1 = '#ebdbb2'
+color_bg0 = '#282828'
+color_bg1 = '#3c3836'
+color_bg2 = '#504945'
+color_bg3 = '#665c54'
+color_bg4 = '#7c6f64'
+color_blue = '#458588'
+color_aqua = '#689d6a'
+color_green = '#98971a'
+color_orange = '#d65d0e'
+color_purple = '#b16286'
+color_red = '#cc241d'
+color_yellow = '#d79921'
+color_bright_red = '#fb4934'
+color_bright_green = '#41FF00'
+color_bright_yellow = '#fabd2f'
+color_bright_blue = '#83a598'
+color_bright_purple = '#d3869b'
+color_bright_aqua = '#8ec07c'
+color_bright_orange = '#fe8019'
+color_light_grey = '#a89984'
+color_custom_blue = '#33ccff'
+color_custom_purple = '#7807be'
+color_custom_teal = '#570096'
+color_custom_green = '#0062d2'
+color_custom_magenta = '#f40fa5'
+color_custom_pink = '#f40fa5'
+color_custom_ice = '#b7e3ffcc'
+color_fg_dark = '#282828'
+
+[os]
+disabled = true
+style = "bg:color_orange fg:color_fg0"
+
+[battery]
+disabled = true
+full_symbol = "󰁹"
+charging_symbol = "󰂄"
+discharging_symbol = "󰂃"
+unknown_symbol = "󰁽"
+empty_symbol = "󰂎"
+format = "[[ $symbol ](fg:color_fg0 bg:color_red)]($style)"
+
+[[battery.display]]
+threshold = 100
+style = 'bg:color_purple'
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+EndeavourOS = ""
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+Pop = ""
+
+[username]
+show_always = true
+style_user = "bg:color_custom_purple fg:color_fg0"
+style_root = "bg:color_custom_purple fg:color_fg0"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:color_fg_dark bg:color_custom_blue"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = " "
+truncate_to_repo = true
+read_only = " "
+read_only_style = "fg:color_fg_dark bg:color_custom_blue"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+"Code" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:color_aqua"
+format = '[[ $symbol $branch ](fg:color_fg0 bg:color_custom_teal)]($style)'
+truncation_length = 24
+
+[git_status]
+style = "bg:color_custom_teal"
+format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_custom_teal)]($style)'
+
+[git_state]
+style = "bg:color_custom_teal"
+format = '[[ $state( $progress_current/$progress_total) ](fg:color_fg0 bg:color_custom_teal)]($style)'
+
+[git_metrics]
+disabled = false
+added_style = "fg:color_bright_yellow bg:color_custom_teal"
+deleted_style = "fg:color_bright_orange bg:color_custom_teal"
+format = '[[+$added]($added_style)/[-$deleted]($deleted_style) ](fg:color_fg0 bg:color_custom_teal)'
+
+[nodejs]
+symbol = ""
+style = "bg:color_custom_green"
+format = '[[ $symbol ](fg:color_fg0 bg:color_custom_green)]($style)'
+
+[c]
+symbol = " "
+style = "bg:color_custom_green"
+format = '[[ $symbol ](fg:color_fg0 bg:color_custom_green)]($style)'
+
+[cpp]
+symbol = " "
+style = "bg:color_custom_green"
+format = '[[ $symbol ](fg:color_fg0 bg:color_custom_green)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:color_custom_green"
+format = '[[ $symbol ](fg:color_fg0 bg:color_custom_green)]($style)'
+
+[golang]
+symbol = "󰟓"
+style = "bg:color_custom_green"
+format = '[[ $symbol ](fg:color_fg0 bg:color_custom_green)]($style)'
+
+[python]
+symbol = ""
+style = "bg:color_custom_green"
+format = '[[ $symbol ](fg:color_fg0 bg:color_custom_green)]($style)'
+
+[package]
+disabled = false
+symbol = "󰏗"
+style = "bg:color_custom_green"
+format = '[[ $symbol $version ](fg:color_fg0 bg:color_custom_green)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:color_custom_ice"
+format = '[[ $symbol( $context) ](fg:#83a598 bg:color_custom_ice)]($style)'
+
+[conda]
+symbol = "󱔎"
+style = "bg:color_custom_ice"
+format = '[[ $symbol( $environment) ](fg:color_fg0 bg:color_custom_ice)]($style)'
+
+[kubernetes]
+disabled = false
+style = "bg:color_custom_ice"
+format = '[[ 󱃾 $context( \($namespace\)) ](fg:color_fg0 bg:color_custom_ice)]($style)'
+detect_files = ["kustomization.yaml", "Chart.yaml", "helmfile.yaml"]
+
+[line_break]
+disabled = true
+
+[character]
+disabled = false
+success_symbol = '[ ❯](bold fg:color_custom_blue)'
+error_symbol = '[ ❯](bold fg:color_custom_pink)'
+vimcmd_symbol = '[ ❯](bold fg:color_custom_blue)'
+vimcmd_replace_one_symbol = '[ ❯](bold fg:color_custom_blue)'
+vimcmd_replace_symbol = '[ ❯](bold fg:color_custom_blue)'
+vimcmd_visual_symbol = '[ ❯](bold fg:color_custom_blue)'
+
+[status]
+disabled = false
+style = "bg:color_bg4"
+format = '[[ ✖ $status ](fg:color_fg0 bg:color_yellow)]($style)'
+map_symbol = true
+recognize_signal_code = true
+
+[cmd_duration]
+min_time = 2000
+style = "bg:color_bg3"
+format = '[[  $duration ](fg:color_fg0 bg:color_aqua)]($style)'
+
+[jobs]
+threshold = 1
+symbol = ""
+style = "bg:color_bg1"
+format = '[[ $symbol $number ](fg:color_fg0 bg:color_yellow)]($style)'

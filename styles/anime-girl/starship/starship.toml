@@ -1,0 +1,143 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+format = """
+$os\
+$username\
+[](bg:color_custom_blue fg:color_custom_purple)\
+$directory\
+[](fg:color_custom_blue bg:color_custom_teal)\
+$git_branch\
+$git_status\
+$git_state\
+$git_metrics\
+[](fg:color_custom_teal bg:color_custom_green)\
+$c\
+$cpp\
+$rust\
+$golang\
+$nodejs\
+$python\
+$package\
+[](fg:color_custom_green bg:color_custom_pink)\
+$kubernetes\
+$docker_context\
+$conda\
+[](fg:color_custom_pink)\
+$character"""
+add_newline = false
+right_format = ""
+scan_timeout = 35
+command_timeout = 700
+palette = 'custom'
+[palettes.custom]
+color_fg0 = '#929e5d'
+color_fg1 = '#899457'
+color_bg0 = '#322d32'
+color_bg1 = '#322d32'
+color_bg2 = '#322d32'
+color_bg3 = '#322d32'
+color_bg4 = '#322d32'
+color_custom_blue = '#414336'
+color_custom_purple = '#4f504e'
+color_custom_teal = '#54546c'
+color_custom_green = '#535779'
+color_custom_magenta = '#646580'
+color_custom_pink = '#899457'
+color_custom_ice = '#929e5d'
+color_fg_dark = '#322d32'
+[username]
+show_always = true
+style_user = "bg:color_custom_purple fg:color_fg0"
+style_root = "bg:color_custom_purple fg:color_fg0"
+format = '[ $user ]($style)'
+[directory]
+style = "fg:color_fg0 bg:color_custom_blue"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = " "
+truncate_to_repo = true
+read_only = " "
+read_only_style = "fg:color_fg_dark bg:color_custom_blue"
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+"Code" = "󰲋 "
+[git_branch]
+symbol = ""
+style = "bg:color_aqua"
+format = '[[ $symbol $branch ](fg:color_fg0 bg:color_custom_teal)]($style)'
+truncation_length = 24
+[git_status]
+style = "bg:color_custom_teal"
+format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_custom_teal)]($style)'
+[git_state]
+style = "bg:color_custom_teal"
+format = '[[ $state( $progress_current/$progress_total) ](fg:color_fg0 bg:color_custom_teal)]($style)'
+[git_metrics]
+disabled = false
+added_style = "fg:color_bright_yellow bg:color_custom_teal"
+deleted_style = "fg:color_bright_orange bg:color_custom_teal"
+format = '[[+$added]($added_style)/[-$deleted]($deleted_style) ](fg:color_fg0 bg:color_custom_teal)'
+[nodejs]
+symbol = ""
+style = "bg:color_custom_green"
+format = '[[ $symbol ](fg:color_fg0 bg:color_custom_green)]($style)'
+[c]
+symbol = " "
+style = "bg:color_custom_green"
+format = '[[ $symbol ](fg:color_fg0 bg:color_custom_green)]($style)'
+[cpp]
+symbol = " "
+style = "bg:color_custom_green"
+format = '[[ $symbol ](fg:color_fg0 bg:color_custom_green)]($style)'
+[rust]
+symbol = ""
+style = "bg:color_custom_green"
+format = '[[ $symbol ](fg:color_fg0 bg:color_custom_green)]($style)'
+[golang]
+symbol = "󰟓"
+style = "bg:color_custom_green"
+format = '[[ $symbol ](fg:color_fg0 bg:color_custom_green)]($style)'
+[python]
+symbol = ""
+style = "bg:color_custom_green"
+format = '[[ $symbol ](fg:color_fg0 bg:color_custom_green)]($style)'
+[package]
+disabled = false
+symbol = "󰏗"
+style = "bg:color_custom_green"
+format = '[[ $symbol $version ](fg:color_fg0 bg:color_custom_green)]($style)'
+[docker_context]
+symbol = ""
+style = "bg:color_custom_ice"
+format = '[[ $symbol( $context) ](fg:#83a598 bg:color_custom_ice)]($style)'
+[conda]
+symbol = "󱔎"
+style = "bg:color_custom_ice"
+format = '[[ $symbol( $environment) ](fg:color_fg0 bg:color_custom_ice)]($style)'
+[kubernetes]
+disabled = false
+style = "bg:color_custom_ice"
+format = '[[ 󱃾 $context( \($namespace\)) ](fg:color_fg0 bg:color_custom_ice)]($style)'
+detect_files = ["kustomization.yaml", "Chart.yaml", "helmfile.yaml"]
+[line_break]
+disabled = true
+[character]
+disabled = false
+success_symbol = '[ ❯](bold fg:color_custom_blue)'
+error_symbol = '[ ❯](bold fg:color_custom_pink)'
+vimcmd_symbol = '[ ❯](bold fg:color_custom_blue)'
+vimcmd_replace_one_symbol = '[ ❯](bold fg:color_custom_blue)'
+vimcmd_replace_symbol = '[ ❯](bold fg:color_custom_blue)'
+vimcmd_visual_symbol = '[ ❯](bold fg:color_custom_blue)'
+[cmd_duration]
+min_time = 2000
+style = "bg:color_bg3"
+format = '[[  $duration ](fg:color_fg0 bg:color_aqua)]($style)'
+[jobs]
+threshold = 1
+symbol = ""
+style = "bg:color_bg1"
+format = '[[ $symbol $number ](fg:color_fg0 bg:color_yellow)]($style)'

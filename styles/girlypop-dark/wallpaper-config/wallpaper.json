@@ -1,0 +1,8 @@
+{
+  "wallpaper_directory": "~/ownCloud/ArchConfig/styles/girlypop-dark/wallpapers",
+  "switch_frequency": 60,
+  "transition_type": "wipe",
+  "cycling_type": "no cycling, random",
+  "sync_type": "all"
+}
+

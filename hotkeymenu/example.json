@@ -1,0 +1,114 @@
+{
+    "title": "Power User Menu",
+    "items": [
+        {
+            "key": "f",
+            "description": "Packages and Features",
+            "command": "octopi"
+        },
+        {
+            "key": "o",
+            "description": "Power Options",
+            "command": "alacritty -e sudo powertop"
+        },
+        {
+            "key": "v",
+            "description": "log Viewer",
+            "command": "alacritty -e journal-viewer"
+        },
+        {
+            "key": "y",
+            "description": "System Info",
+            "command": "alacritty --class=floating-terminal --hold -e 'sleep 1 && fastfetch'"
+        },
+        {
+            "key": "m",
+            "description": "Device Manager (stacer)",
+            "command": "stacer"
+        },
+        {
+            "key": "w",
+            "description": "Network Connections",
+            "command": "gnome-nettool"
+        },
+        {
+            "key": "k",
+            "description": "Disk Management [gparted]",
+            "command": "alacritty -e sudo cfdisk /dev/nvme0n1"
+        },
+        {
+            "key": "i",
+            "description": "Terminal",
+            "command": "alacritty"
+        },
+        {
+            "key": "a",
+            "description": "Admin Terminal",
+            "command": "alacritty -e sudo -s"
+        },
+        {
+            "key": "t",
+            "description": "Task Manager (btop)",
+            "command": "alacritty -e btop"
+        },
+        {
+            "key": "n",
+            "description": "Hyprland Settings",
+            "command": "alacritty -e flatpak run com.ml4w.hyprlandsettings"
+        },
+        {
+            "key": "e",
+            "description": "File Explorer (nautilus)",
+            "command": "nautilus ~"
+        },
+        {
+            "key": "s",
+            "description": "Search",
+            "command": "rofi -show recursivebrowser"
+        },
+        {
+            "key": "r",
+            "description": "Run",
+            "command": "rofi -show run"
+        },
+        {
+            "key": "u",
+            "description": "Shut Down or Sign Out",
+            "submenu": {
+                "title": "Shutdown Submenu",
+                "items": [
+                    {
+                        "key": "i",
+                        "description": "Sign Out",
+                        "command": "hyprctl dispatch exit 0"
+                    },
+                    {
+                        "key": "s",
+                        "description": "Sleep",
+                        "command": "systemctl suspend"
+                    },
+                    {
+                        "key": "u",
+                        "description": "Shutdown",
+                        "command": "systemctl poweroff"
+                    },
+                    {
+                        "key": "r",
+                        "description": "Reboot",
+                        "command": "systemctl reboot"
+                    },
+                    {
+                        "key": "b",
+                        "description": "Back",
+                        "command": "back"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "d",
+            "description": "Desktop (clean workspace)",
+            "command": "hyprctl dispatch workspace empty:move"
+        }
+    ]
+}

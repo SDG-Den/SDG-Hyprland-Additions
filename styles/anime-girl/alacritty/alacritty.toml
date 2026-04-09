@@ -1,0 +1,45 @@
+[window]
+decorations = "None"
+opacity = 0.65
+blur = false
+[font.normal]
+family = "monospace"
+style = "Regular"
+
+[colors]
+primary.foreground = "#929e5d"
+primary.background = "#322d32"
+[colors.normal]
+# Default: "#181818"
+black = "#181818"
+# Default: "#ac4242"
+red = "#ac4242"
+# Default: "#90a959"
+green = "#90a959"
+# Default: "#f4bf75"
+yellow = "#f4bf75"
+# Default: "#6a9fb5"
+blue = "#6a9fb5"
+# Default: "#aa759f"
+magenta = "#aa759f"
+# Default: "#75b5aa"
+cyan = "#75b5aa"
+# Default: "#d8d8d8"
+white = "#d8d8d8"
+[colors.bright]
+# Default: "#6b6b6b"
+black = "#6b6b6b"
+# Default: "#c55555"
+red = "#c55555"
+# Default: "#aac474"
+green = "#aac474"
+# Default: "#feca88"
+yellow = "#feca88"
+# Default: "#82b8c8"
+blue = "#82b8c8"
+# Default: "#c28cb8"
+magenta = "#c28cb8"
+# Default: "#93d3c3"
+cyan = "#93d3c3"
+# Default: "#f8f8f8"
+white = "#f8f8f8"

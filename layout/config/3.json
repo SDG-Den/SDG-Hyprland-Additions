@@ -1,0 +1,45 @@
+{
+  "presets": {
+    "1": [
+      { "x": 2, "y": 5, "width": 47, "height": 94 },
+      { "x": 51, "y": 4, "width": 47, "height": 46 },
+      { "x": 51, "y": 52, "width": 47, "height": 46 }
+    ],
+    "2": [
+      { "x": 2, "y": 5, "width": 27, "height": 94 },
+      { "x": 31, "y": 4, "width": 67, "height": 46 },
+      { "x": 31, "y": 52, "width": 67, "height": 46 }
+    ],
+    "3": [
+      { "x": 2, "y": 5, "width": 96, "height": 46 },
+      { "x": 2, "y": 52, "width": 47, "height": 46 },
+      { "x": 51, "y": 52, "width": 47, "height": 46 }
+    ],
+    "4": [
+      { "x": 2, "y": 5, "width": 96, "height": 66 },
+      { "x": 2, "y": 72, "width": 47, "height": 26 },
+      { "x": 51, "y": 72, "width": 47, "height": 26 } 
+    ],
+    "5": [
+      { "x": 2, "y": 5, "width": 31, "height": 94 },
+      { "x": 34, "y": 5, "width": 31, "height": 94 },
+      { "x": 66, "y": 5, "width": 31, "height": 94 }
+    ],
+    "6": [
+      { "x": 2, "y": 5, "width": 27, "height": 94 },
+      { "x": 31, "y": 5, "width": 67, "height": 26 },
+      { "x": 31, "y": 33, "width": 67, "height": 66 }
+    ],
+    "7": [
+      { "x": 70, "y": 5, "width": 27, "height": 94 },
+      { "x": 2, "y": 5, "width": 67, "height": 26 },
+      { "x": 2, "y": 33, "width": 67, "height": 66 }
+    ],
+    "8": [
+      { "x": 2, "y": 5, "width": 96, "height": 16 },
+      { "x": 2, "y": 22, "width": 47, "height": 76 },
+      { "x": 51, "y": 22, "width": 47, "height": 76 }
+    ]
+
+  }
+}

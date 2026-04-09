@@ -1,0 +1,54 @@
+{
+  "config_schema_version": "1.0",
+  "display": {
+    "portrait_mode_height_px": 300,
+    "landscape_mode_height_px": 200,
+    "rounding_radius_px": 12
+  },
+  "font": {
+    "family": "DejaVu Sans",
+    "size_pt": 20
+  },
+  "colors": {
+    "background": {
+      "description": "Background color in RRGGBBAA format",
+      "value": "00000000"
+    },
+    "keys": {
+      "default": {
+        "description": "Default key color in RRGGBBAA format",
+        "value": "2e2e34AA"
+      },
+      "special": {
+        "description": "Special key color in RRGGBBAA format",
+        "value": "1D1D20AA"
+      },
+      "pressed": {
+        "description": "Pressed key color in RRGGBBAA format",
+        "value": "1D1D20AA"
+      },
+      "pressed_special": {
+        "description": "Pressed special key color in RRGGBBAA format",
+        "value": "0D0D0DAA"
+      },
+      "swiped": {
+        "description": "Swiped key color in RRGGBBAA format",
+        "value": "1D1D20AA"
+      },
+      "swiped_special": {
+        "description": "Swiped special key color in RRGGBBAA format",
+        "value": "0D0D0DAA"
+      }
+    },
+    "text": {
+      "default": {
+        "description": "Default key letter color in RRGGBBAA format",
+        "value": "32ABDAFF"
+      },
+      "special": {
+        "description": "Special key letter color in RRGGBBAA format",
+        "value": "8C10B1FF"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+[window]
+decorations = "None"
+
+opacity = 1.0
+
+blur = false
+
+[font.normal]
+family = "AC437 IBM DOS ISO8"
+style = "Regular"
+
+
+[colors]
+
+primary.foreground = "#4AF626"
+primary.background = "#000000"
+
+[colors.normal]
+
+# Default: "#000000"
+black = "#000000"
+
+# Default: "#4AF626"
+red = "#4AF626"
+
+# Default: "#4AF626"
+green = "#4AF626"
+
+# Default: "#4AF626"
+yellow = "#4AF626"
+
+# Default: "#4AF626"
+blue = "#4AF626"
+
+# Default: "#4AF626"
+magenta = "#4AF626"
+
+# Default: "#4AF626"
+cyan = "#4AF626"
+
+# Default: "#4AF626"
+white = "#4AF626"
+
+[colors.bright]
+
+# Default: "#000000"
+black = "#000000"
+
+# Default: "#4AF626"
+red = "#4AF626"
+
+# Default: "#4AF626"
+green = "#4AF626"
+
+# Default: "#4AF626"
+yellow = "#4AF626"
+
+# Default: "#4AF626"
+blue = "#4AF626"
+
+# Default: "#4AF626"
+magenta = "#4AF626"
+
+# Default: "#4AF626"
+cyan = "#4AF626"
+
+# Default: "#4AF626"
+white = "#4AF626"
+

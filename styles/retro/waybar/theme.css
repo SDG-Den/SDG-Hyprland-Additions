@@ -1,0 +1,58 @@
+@define-color black      	#000000;
+@define-color text       	#4AF626;
+
+@define-color transparent	rgba(0, 0, 0, 0);
+@define-color transparent2	rgba(0, 0, 0, 0.5);
+@define-color accent        #4AF626;
+@define-color highlight          #4AF626; 
+@define-color highlighttrans     #4AF626; 
+
+@define-color background-module     @transparent2;
+@define-color background-module-2     @transparent2;
+@define-color alert        #4AF626;
+@define-color warning      #4AF626;
+
+
+#workspaces button.active,
+#workspaces button:hover {
+    color: @black;
+    background: @accent;
+}
+
+#custom-vpn,
+#custom-notification,
+#custom-notification.none,
+#custom-appmenu,
+#custom-exit,
+#custom-keyboard,
+#battery,
+#clock,
+#network,
+#pulseaudio,
+#pulseaudio-slider,
+#tray,
+#window,
+#custom-keybinds,
+#custom-keyboard,
+#custom-menu,
+#custom-quit,
+#custom-memory,
+#custom-cpu,
+#custom-touchscreen,
+#custom-keyboard,
+#workspaces button,
+#bluetooth,
+#window,
+#workspaces,
+#custom-swaync {
+    border-radius: 0px;
+}
+
+* {
+	font-family: "AC437 IBM DOS ISO8";
+    font-weight: bold;
+	min-height: 0;	
+	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+	font-size: 97%;
+	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
